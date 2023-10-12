@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'website_ristana.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-DATABASES = {'default': dj_database_url.parse("postgres://rishta_nata_website_user:ztXTgcF4MFpiH4h943cvhmM2djfqoRwB@dpg-ckjog1cl4vmc73a6u2sg-a/rishta_nata_website")}
+DATABASES = {'default': dj_database_url.parse("postgres://rishta_nata_website_user:ztXTgcF4MFpiH4h943cvhmM2djfqoRwB@dpg-ckjog1cl4vmc73a6u2sg-a.singapore-postgres.render.com/rishta_nata_website")}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
