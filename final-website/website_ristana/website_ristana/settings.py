@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e-av!+*%#30^7!-t)-@+a@db#*=zgo0*$c(fdo#*#zvds$=^wb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG =True
 
 ALLOWED_HOSTS = []
 
@@ -87,8 +87,12 @@ WSGI_APPLICATION = 'website_ristana.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+       'ENGINE': 'django.db.backends.postgresql_psycopg2',
+       'NAME': 'mydb', #Database Name
+       'USER': 'postgres', #Your Postgresql user
+       'PASSWORD': 'sak-1905', #Your Postgresql password
+       'HOST': '127.0.0.1',
+       'PORT': '5432',
     }
 }
 
